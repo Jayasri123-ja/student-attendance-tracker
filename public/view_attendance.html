@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>View Attendance</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>View Attendance Records</h1>
+        
+        <div class="filters">
+            <div class="input-group">
+                <label for="viewBy">View By:</label>
+                <select id="viewBy">
+                    <option value="date">By Date</option>
+                    <option value="student">By Student</option>
+                </select>
+            </div>
+
+            <!-- Filter for Date -->
+            <div id="dateFilter" class="filter-option">
+                <div class="input-group">
+                    <label for="selectedDate">Select Date:</label>
+                    <input type="date" id="selectedDate">
+                </div>
+                <button id="fetchByDate">Fetch Attendance</button>
+            </div>
+
+            <!-- Filter for Student -->
+            <div id="studentFilter" class="filter-option" style="display: none;">
+                <div class="input-group">
+                    <label for="selectedStudent">Select Student:</label>
+                    <select id="selectedStudent"></select>
+                </div>
+                <button id="fetchByStudent">Fetch Attendance</button>
+            </div>
+        </div>
+
+        <div id="attendanceResults">
+            <!-- Results will be displayed here -->
+        </div>
+
+        <br>
+        <a href="/dashboard.html">Back to Dashboard</a>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
