@@ -49,21 +49,20 @@ A default teacher account is created automatically:
 - **Username:** `teacher`
 - **Password:** `password123`
 
+##Project structure
+
 attendance-tracker/
 │
 ├── public/
 │   ├── css/
 │   │   └── style.css
-│   │
 │   ├── js/
 │   │   └── script.js
-│   │
 │   ├── index.html
 │   ├── dashboard.html
 │   ├── add_student.html
 │   ├── mark_attendance.html
 │   └── view_attendance.html
-│
 ├── database.js
 ├── server.js
 ├── package.json
